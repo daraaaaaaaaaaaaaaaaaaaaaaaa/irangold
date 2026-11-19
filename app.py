@@ -6,6 +6,9 @@ import sqlite3
 import json
 
 app = Flask(__name__)
+
+create_database()
+
 @app.route("/")
 def home():
     try:
